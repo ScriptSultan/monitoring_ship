@@ -7,7 +7,7 @@ class MyWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         # Загружаем .ui файл динамически (self — это QMainWindow)
-        uic.loadUi('untitled.ui', self)
+        uic.loadUi('qt6/untitled.ui', self)
 
         self.replace_graphics_view_with_plot()
 
