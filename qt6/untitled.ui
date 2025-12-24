@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1590</width>
+    <height>906</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1581</width>
+      <height>941</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	color:  rgb(210, 96, 255);
+	background: rgb(40, 40, 40)
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_monitor">
+     <attribute name="title">
+      <string>Monitor</string>
+     </attribute>
+     <widget class="QWidget" name="verticalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>0</y>
+        <width>531</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_15">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(40, 40, 40);
+color:  rgb(255, 255, 255);
+padding-left: 20px</string>
+         </property>
+         <property name="text">
+          <string>Наряды</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTreeWidget" name="treeWidget_4">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTreeWidget {
+    background: rgb(40, 40, 40);
+    color: white;
+    gridline-color: rgb(60, 60, 60);
+   
+}
+QHeaderView::section {
+    background-color: rgb(25, 25, 25);
+    color:white;
+    font-weight: bold;	 
+}
+
+
+QTreeWidget::item:selected {
+    background-color: rgb(80, 30, 100);
+    color: white;
+}
+
+
+QTreeWidget::item::hover {
+    border: 1px solid rgb(100, 100, 100);
+	padding: 5px
+}
+
+QScrollBar:vertical {
+    background: rgb(25, 25, 25);
+    width: 15px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: rgb(80, 30, 100);
+    min-height: 20px;
+    border-radius: 7px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: rgb(40, 40, 40); /* Ваш основной цвет фона */
+    border: none;
+}
+QScrollBar::handle:vertical:hover {
+    background: rgb(225, 130, 255);
+}
+QScrollBar::handle:vertical:pressed {
+    background: rgb(190, 70, 235);
+}
+QScrollBar:vertical {
+    background: rgb(25, 25, 25);
+    width: 15px;
+    margin: 0px;
+}
+QScrollBar::handle:horizontal  {
+    background: rgb(80, 30, 100);
+    min-height: 20px;
+    border-radius: 7px;
+}
+QScrollBar::add-page:horizontal , QScrollBar::sub-page:horizontal {
+    background: rgb(40, 40, 40); /* Ваш основной цвет фона */
+    border: none;
+}
+QScrollBar::handle:horizontal :hover {
+    background: rgb(225, 130, 255);
+}
+QScrollBar::handle:horizontal :pressed {
+    background: rgb(190, 70, 235);
+}
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="showDropIndicator" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="verticalScrollMode">
+          <enum>QAbstractItemView::ScrollPerPixel</enum>
+         </property>
+         <column>
+          <property name="text">
+           <string>Судно</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Не выпол. на Крит оборудовании</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Внеплановый</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Просроч. плановые</string>
+          </property>
+         </column>
+         <item>
+          <property name="text">
+           <string>Doride</string>
+          </property>
+          <property name="text">
+           <string>123</string>
+          </property>
+          <property name="text">
+           <string>45</string>
+          </property>
+          <property name="text">
+           <string>23</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Astra</string>
+          </property>
+          <property name="text">
+           <string>123</string>
+          </property>
+          <property name="text">
+           <string>23</string>
+          </property>
+          <property name="text">
+           <string>23</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Dickson</string>
+          </property>
+          <property name="text">
+           <string>3</string>
+          </property>
+          <property name="text">
+           <string>43</string>
+          </property>
+          <property name="text">
+           <string>12</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>410</y>
+        <width>511</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QLabel" name="label_17">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(40, 40, 40);
+color:  rgb(255, 255, 255);
+padding-left: 20px</string>
+         </property>
+         <property name="text">
+          <string>Счётчики</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTreeWidget" name="treeWidget_6">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTreeWidget {
+    background: rgb(40, 40, 40);
+    color: white;
+    gridline-color: rgb(60, 60, 60);
+   
+}
+QHeaderView::section {
+    background-color: rgb(25, 25, 25);
+    color:white;
+    font-weight: bold;
+	 
+}
+
+
+
+QTreeWidget::item:selected {
+    background-color: rgb(80, 30, 100);
+    color: white;
+}
+
+
+QTreeWidget::item::hover {
+    border: 1px solid rgb(100, 100, 100);
+	padding: 5px
+}
+
+QScrollBar:vertical {
+    background: rgb(25, 25, 25);
+    width: 15px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: rgb(210, 96, 255);
+    min-height: 20px;
+    border-radius: 7px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: rgb(40, 40, 40); /* Ваш основной цвет фона */
+    border: none;
+}
+QScrollBar::handle:vertical:hover {
+    background: rgb(225, 130, 255);
+}
+QScrollBar::handle:vertical:pressed {
+    background: rgb(190, 70, 235);
+}
+QScrollBar:vertical {
+    background: rgb(25, 25, 25);
+    width: 15px;
+    margin: 0px;
+}
+QScrollBar::handle:horizontal  {
+    background: rgb(210, 96, 255);
+    min-height: 20px;
+    border-radius: 7px;
+}
+QScrollBar::add-page:horizontal , QScrollBar::sub-page:horizontal {
+    background: rgb(40, 40, 40); /* Ваш основной цвет фона */
+    border: none;
+}
+QScrollBar::handle:horizontal :hover {
+    background: rgb(225, 130, 255);
+}
+QScrollBar::handle:horizontal :pressed {
+    background: rgb(190, 70, 235);
+}
+</string>
+         </property>
+         <property name="animated">
+          <bool>true</bool>
+         </property>
+         <attribute name="headerHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="headerShowSortIndicator" stdset="0">
+          <bool>true</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Судно</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Не обновлялись 2 недели</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Просрочены более чем на месяц</string>
+          </property>
+         </column>
+         <item>
+          <property name="text">
+           <string>Doride</string>
+          </property>
+          <property name="text">
+           <string>123</string>
+          </property>
+          <property name="text">
+           <string>45</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Astra</string>
+          </property>
+          <property name="text">
+           <string>123</string>
+          </property>
+          <property name="text">
+           <string>23</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Dickson</string>
+          </property>
+          <property name="text">
+           <string>3</string>
+          </property>
+          <property name="text">
+           <string>43</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>410</y>
+        <width>531</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*** Стиль для основного виджета QGraphicsView ***/
+QGraphicsView {
+    background: rgb(40, 40, 40);
+    border: 1px solid rgb(60, 60, 60);
+    border-radius: 4px;
+}
+
+/*** Стиль для вертикальной полосы прокрутки ***/
+QScrollBar:vertical {
+    background: rgb(25, 25, 25);
+    width: 15px;
+    margin: 0px;
+    border: none;
+}
+QScrollBar::handle:vertical {
+    background: rgb(210, 96, 255);
+    min-height: 20px;
+    border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover {
+    background: rgb(225, 130, 255);
+}
+QScrollBar::handle:vertical:pressed {
+    background: rgb(190, 70, 235);
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    height: 0px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: rgb(25, 25, 25);
+    border: none;
+}
+
+/*** Стиль для горизонтальной полосы прокрутки ***/
+QScrollBar:horizontal {
+    background: rgb(25, 25, 25);
+    height: 15px;
+    margin: 0px;
+    border: none;
+}
+QScrollBar::handle:horizontal {
+    background: rgb(210, 96, 255);
+    min-width: 20px;
+    border-radius: 7px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: rgb(225, 130, 255);
+}
+QScrollBar::handle:horizontal:pressed {
+    background: rgb(190, 70, 235);
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    border: none;
+    background: none;
+    width: 0px;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: rgb(25, 25, 25);
+    border: none;
+}</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QLabel" name="label_16">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background: rgb(40, 40, 40);
+color:  rgb(255, 255, 255);
+padding-left: 20px</string>
+         </property>
+         <property name="text">
+          <string>Заявка</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTreeWidget" name="treeWidget_5">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTreeWidget {
+    background: rgb(40, 40, 40);
+    color: white;
+    gridline-color: rgb(60, 60, 60);
+   
+}
+QHeaderView::section {
+    background-color: rgb(25, 25, 25);
+    color:white;
+    font-weight: bold;
+	 
+}
+
+
+
+QTreeWidget::item:selected {
+    background-color: rgb(80, 30, 100);
+    color: white;
+}
+
+
+QTreeWidget::item::hover {
+    border: 1px solid rgb(100, 100, 100);
+	padding: 5px
+}
+
+QScrollBar:vertical {
+    background: rgb(25, 25, 25);
+    width: 15px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: rgb(210, 96, 255);
+    min-height: 20px;
+    border-radius: 7px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: rgb(40, 40, 40); /* Ваш основной цвет фона */
+    border: none;
+}
+QScrollBar::handle:vertical:hover {
+    background: rgb(225, 130, 255);
+}
+QScrollBar::handle:vertical:pressed {
+    background: rgb(190, 70, 235);
+}
+QScrollBar:vertical {
+    background: rgb(25, 25, 25);
+    width: 15px;
+    margin: 0px;
+}
+QScrollBar::handle:horizontal  {
+    background: rgb(210, 96, 255);
+    min-height: 20px;
+    border-radius: 7px;
+}
+QScrollBar::add-page:horizontal , QScrollBar::sub-page:horizontal {
+    background: rgb(40, 40, 40); /* Ваш основной цвет фона */
+    border: none;
+}
+QScrollBar::handle:horizontal :hover {
+    background: rgb(225, 130, 255);
+}
+QScrollBar::handle:horizontal :pressed {
+    background: rgb(190, 70, 235);
+}
+</string>
+         </property>
+         <column>
+          <property name="text">
+           <string>Судно</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>На подтв.</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Новая заявка</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>На суперинтенданте</string>
+          </property>
+         </column>
+         <item>
+          <property name="text">
+           <string>Doride</string>
+          </property>
+          <property name="text">
+           <string>123</string>
+          </property>
+          <property name="text">
+           <string>45</string>
+          </property>
+          <property name="text">
+           <string>23</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Astra</string>
+          </property>
+          <property name="text">
+           <string>123</string>
+          </property>
+          <property name="text">
+           <string>23</string>
+          </property>
+          <property name="text">
+           <string>23</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Dickson</string>
+          </property>
+          <property name="text">
+           <string>3</string>
+          </property>
+          <property name="text">
+           <string>43</string>
+          </property>
+          <property name="text">
+           <string>12</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_sertificat_beta">
+     <attribute name="title">
+      <string>Certificate Beta</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_beta">
+     <attribute name="title">
+      <string>Beta</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1590</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
